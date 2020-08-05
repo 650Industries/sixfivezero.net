@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Six Five Zero</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<style>
+			body {
+				background: #efeeec;
+				margin: 0; padding: 0;
+				height: 100%;
+				overflow: hidden;
+			
+			}
+			.container {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				-webkit-animation: rotateWorld linear 20s infinite;
+			}
+			
+			
+			h1 {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				width: 200px;
+				height: 400px;
+				margin-left: -100px;
+				margin-top: -200px;
+				background: url('logo.png') top left no-repeat;
+				text-indent: -9999px;
+				overflow: hidden;
+				-webkit-animation: fadeIn ease-in 6s;
+			}
+			
+			.shape {
+				display: block;
+				position: fixed;				
+				width: 3200px;
+				height: 3200px;
+				top: 50%;
+				left: 50%;
+				margin-left: -1600px;
+				margin-top: -1600px;
+				-webkit-animation: zoomShape 6s linear infinite;
+				opacity: 0;
+			}
+			
+			.pentagon {
+				-webkit-animation-delay: 2s;
+			}
+			
+			.circle {
+				-webkit-animation-delay: 4s;
+			}
+
+
+			@-webkit-keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			
+			@-webkit-keyframes zoomShape {
+				from {
+					width: 3200px;
+					height: 3200px;
+					top: 50%;
+					left: 50%;
+					margin-left: -1600px;
+					margin-top: -1600px;
+					opacity: 0;
+				}
+				1% {
+					opacity: 1;
+				}
+				
+				to {
+					width: 0px;
+					height: 0px;
+					top: 50%;
+					left: 50%;
+					margin-left: 0;
+					margin-top: 0px;
+					opacity: 0;
+				}
+		
+			}
+			
+			@-webkit-keyframes rotateWorld {
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+
+		</style>
+  	</head>
+	<body>
+		<h1>650</h1>
+		<div class="container">
+		<img class="shape" src="6.png"/>
+		<img class="shape pentagon" src="5.png"/>
+		<img class="shape circle" src="0.png"/>
+		</div>
+	</body>
+
+
+</html>
