@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Six Five Zero</title>
@@ -17,9 +18,8 @@
 				right: 0;
 				left: 0;
 				bottom: 0;
-				-webkit-animation: rotateWorld linear 20s infinite;
+				animation: rotateWorld linear 20s infinite;
 			}
-			
 			
 			h1 {
 				position: fixed;
@@ -32,7 +32,7 @@
 				background: url('logo.png') top left no-repeat;
 				text-indent: -9999px;
 				overflow: hidden;
-				-webkit-animation: fadeIn ease-in 6s;
+				animation: fadeIn ease-in 6s;
 			}
 			
 			.shape {
@@ -44,20 +44,20 @@
 				left: 50%;
 				margin-left: -1600px;
 				margin-top: -1600px;
-				-webkit-animation: zoomShape 6s linear infinite;
+				animation: zoomShape 6s linear infinite;
 				opacity: 0;
 			}
 			
 			.pentagon {
-				-webkit-animation-delay: 2s;
+				animation-delay: 2s;
 			}
 			
 			.circle {
-				-webkit-animation-delay: 4s;
+				animation-delay: 4s;
 			}
 
 
-			@-webkit-keyframes fadeIn {
+			@keyframes fadeIn {
 				from {
 					opacity: 0;
 				}
@@ -66,7 +66,7 @@
 				}
 			}
 			
-			@-webkit-keyframes zoomShape {
+			@keyframes zoomShape {
 				from {
 					width: 3200px;
 					height: 3200px;
@@ -89,28 +89,24 @@
 					margin-top: 0px;
 					opacity: 0;
 				}
-		
 			}
 			
-			@-webkit-keyframes rotateWorld {
+			@keyframes rotateWorld {
 				from {
-					-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
 				}
 				to {
-					-webkit-transform: rotate(360deg);
+					transform: rotate(360deg);
 				}
 			}
-
 		</style>
-  	</head>
+  </head>
 	<body>
 		<h1>650</h1>
 		<div class="container">
-		<img class="shape" src="6.png"/>
-		<img class="shape pentagon" src="5.png"/>
-		<img class="shape circle" src="0.png"/>
+			<img class="shape" src="6.png" />
+			<img class="shape pentagon" src="5.png" />
+			<img class="shape circle" src="0.png" />
 		</div>
 	</body>
-
-
 </html>
